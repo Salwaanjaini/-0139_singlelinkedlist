@@ -165,7 +165,14 @@ int main()
         break;
 
         switch(ch)
-        
+        case '4':
+        {
+            if (mhs.listEmpty() == true)
+            {
+                cout << "\nList Kosong\n";
+                break;
+            }
+        }
 
     }
 
