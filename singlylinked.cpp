@@ -137,6 +137,7 @@ int main()
             mhs.addNode();
             break;
         }
+       switch (ch)
         case '2':
         {
             if (mhs.listEmpty())
@@ -156,6 +157,15 @@ int main()
                      << "Data dengan nomor mahasiswa" << nim << "berhasil dihapus " << endl;
         }
         break;
+        switch(ch)
+        case '3':
+        {
+            mhs.traverse();
+        }
+        break;
+
+        switch(ch)
+        
 
     }
 
