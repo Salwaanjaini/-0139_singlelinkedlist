@@ -134,10 +134,11 @@ int main()
         switch (ch)
         {
         case '1':
+        {
             mhs.addNode();
             break;
         }
-       switch (ch)
+
         case '2':
         {
             if (mhs.listEmpty())
@@ -157,14 +158,12 @@ int main()
                      << "Data dengan nomor mahasiswa" << nim << "berhasil dihapus " << endl;
         }
         break;
-        switch(ch)
         case '3':
         {
             mhs.traverse();
         }
         break;
-
-        switch(ch)
+        
         case '4':
         {
             if (mhs.listEmpty() == true)
@@ -186,8 +185,19 @@ int main()
                 cout << "\nNO Mahasiswa: " << current->noMhs << endl;
                 cout << "\n";
             }
+
         }
-
+        break;
+        case '5':
+        {
+        }
+        break;  
+        default:
+        {
+            cout << "Pilihan salah !." << endl;
+        }
+        break;
     }
-
+    while (ch !='5');
+}
 }
