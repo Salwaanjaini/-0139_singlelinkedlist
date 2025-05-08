@@ -70,5 +70,11 @@ public:
     {
         *previous = START;
         *current = START;
+
+        while ((*current != NULL) && (nim != (*current)->noMhs))
+        {
+            *previous = *current;
+            *current = (*current)->next;
+        }
     }
 };
