@@ -55,6 +55,14 @@ public:
             current = current->next;
         }
 
+        nodeBaru->next = current;
+        previous->next = nodeBaru;
+    }
 
+public:
+
+    bool listEmpty()
+    {
+        return (START == NULL);
     }
 };
